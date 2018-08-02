@@ -1,0 +1,57 @@
+time to `make`
+
+real	88m25.698s
+user	73m0.177s
+sys	14m9.280s
+
+time to `make modules_istall`
+
+real	1m32.488s
+user	0m44.947s
+sys	0m27.152s
+
+time to `make install`
+[root@otuslinux linux-4.4.145]# time make install
+sh ./arch/x86/boot/install.sh 4.4.145-otuslinux-aidjek.edition arch/x86/boot/bzImage \
+time to `make`
+	System.map "/boot"
+
+real	1m50.726s
+user	0m56.610s
+sys	0m47.294s
+
+Size of modules:
+
+[root@otuslinux ~]# du -shc /lib/modules/4.4.145-otuslinux-aidjek.edition/*
+0	/lib/modules/4.4.145-otuslinux-aidjek.edition/build
+1.9G	/lib/modules/4.4.145-otuslinux-aidjek.edition/kernel
+760K	/lib/modules/4.4.145-otuslinux-aidjek.edition/modules.alias
+732K	/lib/modules/4.4.145-otuslinux-aidjek.edition/modules.alias.bin
+8.0K	/lib/modules/4.4.145-otuslinux-aidjek.edition/modules.builtin
+12K	/lib/modules/4.4.145-otuslinux-aidjek.edition/modules.builtin.bin
+240K	/lib/modules/4.4.145-otuslinux-aidjek.edition/modules.dep
+340K	/lib/modules/4.4.145-otuslinux-aidjek.edition/modules.dep.bin
+4.0K	/lib/modules/4.4.145-otuslinux-aidjek.edition/modules.devname
+92K	/lib/modules/4.4.145-otuslinux-aidjek.edition/modules.order
+4.0K	/lib/modules/4.4.145-otuslinux-aidjek.edition/modules.softdep
+328K	/lib/modules/4.4.145-otuslinux-aidjek.edition/modules.symbols
+408K	/lib/modules/4.4.145-otuslinux-aidjek.edition/modules.symbols.bin
+0	/lib/modules/4.4.145-otuslinux-aidjek.edition/source
+1.9G	total
+
+Size of vmlinux:
+[root@otuslinux ~]# ls -last /boot/
+total 118144
+    0 drwx------.  5 root root       97 Aug  2 08:12 grub2
+27984 -rw-------.  1 root root 28653742 Aug  2 08:12 initramfs-4.4.145-otuslinux-aidjek.edition.img
+    4 dr-xr-xr-x.  5 root root     4096 Aug  2 08:12 .
+    0 lrwxrwxrwx.  1 root root       49 Aug  2 08:10 System.map -> /boot/System.map-4.4.145-otuslinux-aidjek.edition
+    0 lrwxrwxrwx.  1 root root       46 Aug  2 08:10 vmlinuz -> /boot/vmlinuz-4.4.145-otuslinux-aidjek.edition
+ 3332 -rw-r--r--.  1 root root  3410106 Aug  2 08:10 System.map-4.4.145-otuslinux-aidjek.edition
+ 6120 -rw-r--r--.  1 root root  6264640 Aug  2 08:10 vmlinuz-4.4.145-otuslinux-aidjek.edition
+ 
+
+Current version of kernel:
+
+[root@otuslinux ~]# uname -a
+Linux otuslinux 4.4.145-otuslinux-aidjek.edition #1 SMP Thu Aug 2 07:17:48 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
