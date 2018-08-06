@@ -1,0 +1,411 @@
+idjek@Compunet-MacBook-Pro:~/Projects/OTUS/HomeWorks/2_linux_raid/additional_task|
+⇒  vagrant up
+Bringing machine 'otuslinux' up with 'virtualbox' provider...
+==> otuslinux: Importing base box 'centos/7'...
+==> otuslinux: Matching MAC address for NAT networking...
+==> otuslinux: Checking if box 'centos/7' is up to date...
+==> otuslinux: Setting the name of the VM: additional_task_otuslinux_1533588503014_90716
+==> otuslinux: Fixed port collision for 22 => 2222. Now on port 2200.
+==> otuslinux: Clearing any previously set network interfaces...
+==> otuslinux: Preparing network interfaces based on configuration...
+    otuslinux: Adapter 1: nat
+    otuslinux: Adapter 2: hostonly
+==> otuslinux: Forwarding ports...
+    otuslinux: 22 (guest) => 2200 (host) (adapter 1)
+==> otuslinux: Running 'pre-boot' VM customizations...
+==> otuslinux: Booting VM...
+==> otuslinux: Waiting for machine to boot. This may take a few minutes...
+    otuslinux: SSH address: 127.0.0.1:2200
+    otuslinux: SSH username: vagrant
+    otuslinux: SSH auth method: private key
+    otuslinux: Warning: Connection reset. Retrying...
+    otuslinux: Warning: Remote connection disconnect. Retrying...
+    otuslinux: Warning: Connection reset. Retrying...
+    otuslinux: Warning: Remote connection disconnect. Retrying...
+    otuslinux: Warning: Connection reset. Retrying...
+    otuslinux: Warning: Remote connection disconnect. Retrying...
+    otuslinux: Warning: Connection reset. Retrying...
+    otuslinux: Warning: Remote connection disconnect. Retrying...
+    otuslinux: Warning: Connection reset. Retrying...
+    otuslinux: Warning: Remote connection disconnect. Retrying...
+    otuslinux: Warning: Connection reset. Retrying...
+    otuslinux: Warning: Remote connection disconnect. Retrying...
+    otuslinux: Warning: Connection reset. Retrying...
+    otuslinux: Warning: Remote connection disconnect. Retrying...
+    otuslinux: Warning: Connection reset. Retrying...
+    otuslinux: Warning: Remote connection disconnect. Retrying...
+    otuslinux: Warning: Connection reset. Retrying...
+    otuslinux: Warning: Remote connection disconnect. Retrying...
+    otuslinux: Warning: Connection reset. Retrying...
+    otuslinux: Warning: Remote connection disconnect. Retrying...
+    otuslinux: Warning: Connection reset. Retrying...
+    otuslinux: Warning: Remote connection disconnect. Retrying...
+    otuslinux: Warning: Connection reset. Retrying...
+    otuslinux: Warning: Remote connection disconnect. Retrying...
+    otuslinux: Warning: Connection reset. Retrying...
+    otuslinux: Warning: Remote connection disconnect. Retrying...
+    otuslinux: Warning: Connection reset. Retrying...
+    otuslinux: Warning: Remote connection disconnect. Retrying...
+    otuslinux: Warning: Connection reset. Retrying...
+    otuslinux: Warning: Remote connection disconnect. Retrying...
+    otuslinux: Warning: Connection reset. Retrying...
+    otuslinux:
+    otuslinux: Vagrant insecure key detected. Vagrant will automatically replace
+    otuslinux: this with a newly generated keypair for better security.
+    otuslinux:
+    otuslinux: Inserting generated public key within guest...
+    otuslinux: Removing insecure key from the guest if it's present...
+    otuslinux: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> otuslinux: Machine booted and ready!
+==> otuslinux: Checking for guest additions in VM...
+    otuslinux: No guest additions were detected on the base box for this VM! Guest
+    otuslinux: additions are required for forwarded ports, shared folders, host only
+    otuslinux: networking, and more. If SSH fails on this machine, please install
+    otuslinux: the guest additions and repackage the box to continue.
+    otuslinux:
+    otuslinux: This is not an error message; everything may continue to work properly,
+    otuslinux: in which case you may ignore this message.
+==> otuslinux: Setting hostname...
+==> otuslinux: Configuring and enabling network interfaces...
+    otuslinux: SSH address: 127.0.0.1:2200
+    otuslinux: SSH username: vagrant
+    otuslinux: SSH auth method: private key
+==> otuslinux: Rsyncing folder: /Users/aidjek/Projects/OTUS/HomeWorks/2_linux_raid/additional_task/ => /vagrant
+==> otuslinux: Running provisioner: shell...
+    otuslinux: Running: inline script
+    otuslinux: Loaded plugins: fastestmirror
+    otuslinux: Determining fastest mirrors
+    otuslinux:  * base: mirrors.mivocloud.com
+    otuslinux:  * extras: mirrors.mivocloud.com
+    otuslinux:  * updates: mirrors.mivocloud.com
+    otuslinux: Resolving Dependencies
+    otuslinux: --> Running transaction check
+    otuslinux: ---> Package gdisk.x86_64 0:0.8.6-5.el7 will be installed
+    otuslinux: --> Processing Dependency: libicuuc.so.50()(64bit) for package: gdisk-0.8.6-5.el7.x86_64
+    otuslinux: --> Processing Dependency: libicuio.so.50()(64bit) for package: gdisk-0.8.6-5.el7.x86_64
+    otuslinux: ---> Package hdparm.x86_64 0:9.43-5.el7 will be installed
+    otuslinux: ---> Package mdadm.x86_64 0:4.0-13.el7 will be installed
+    otuslinux: --> Processing Dependency: libreport-filesystem for package: mdadm-4.0-13.el7.x86_64
+    otuslinux: ---> Package smartmontools.x86_64 1:6.5-1.el7 will be installed
+    otuslinux: --> Processing Dependency: mailx for package: 1:smartmontools-6.5-1.el7.x86_64
+    otuslinux: --> Running transaction check
+    otuslinux: ---> Package libicu.x86_64 0:50.1.2-15.el7 will be installed
+    otuslinux: ---> Package libreport-filesystem.x86_64 0:2.1.11-40.el7.centos will be installed
+    otuslinux: ---> Package mailx.x86_64 0:12.5-19.el7 will be installed
+    otuslinux: --> Finished Dependency Resolution
+    otuslinux:
+    otuslinux: Dependencies Resolved
+    otuslinux:
+    otuslinux: ================================================================================
+    otuslinux:  Package                  Arch       Version                     Repository
+    otuslinux:                                                                            Size
+    otuslinux: ================================================================================
+    otuslinux: Installing:
+    otuslinux:  gdisk                    x86_64     0.8.6-5.el7                 base     187 k
+    otuslinux:  hdparm                   x86_64     9.43-5.el7                  base      83 k
+    otuslinux:  mdadm                    x86_64     4.0-13.el7                  base     431 k
+    otuslinux:  smartmontools            x86_64     1:6.5-1.el7                 base     460 k
+    otuslinux: Installing for dependencies:
+    otuslinux:  libicu                   x86_64     50.1.2-15.el7               base     6.9 M
+    otuslinux:  libreport-filesystem     x86_64     2.1.11-40.el7.centos        base      39 k
+    otuslinux:  mailx                    x86_64     12.5-19.el7                 base     245 k
+    otuslinux:
+    otuslinux: Transaction Summary
+    otuslinux: ================================================================================
+    otuslinux: Install  4 Packages (+3 Dependent packages)
+    otuslinux:
+    otuslinux: Total download size: 8.3 M
+    otuslinux: Installed size: 28 M
+    otuslinux: Downloading packages:
+    otuslinux: Public key for hdparm-9.43-5.el7.x86_64.rpm is not installed
+    otuslinux: warning: /var/cache/yum/x86_64/7/base/packages/hdparm-9.43-5.el7.x86_64.rpm: Header V3 RSA/SHA256 Signature, key ID f4a80eb5: NOKEY
+    otuslinux: --------------------------------------------------------------------------------
+    otuslinux: Total                                              4.3 MB/s | 8.3 MB  00:01
+    otuslinux: Retrieving key from file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+    otuslinux: Importing GPG key 0xF4A80EB5:
+    otuslinux:  Userid     : "CentOS-7 Key (CentOS 7 Official Signing Key) <security@centos.org>"
+    otuslinux:  Fingerprint: 6341 ab27 53d7 8a78 a7c2 7bb1 24c6 a8a7 f4a8 0eb5
+    otuslinux:  Package    : centos-release-7-5.1804.el7.centos.x86_64 (@anaconda)
+    otuslinux:  From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+    otuslinux: Running transaction check
+    otuslinux: Running transaction test
+    otuslinux: Transaction test succeeded
+    otuslinux: Running transaction
+    otuslinux:   Installing : libreport-filesystem-2.1.11-40.el7.centos.x86_64             1/7
+    otuslinux:
+    otuslinux:   Installing : mailx-12.5-19.el7.x86_64                                     2/7
+    otuslinux:
+    otuslinux:   Installing : libicu-50.1.2-15.el7.x86_64                                  3/7
+    otuslinux:
+    otuslinux:   Installing : gdisk-0.8.6-5.el7.x86_64                                     4/7
+    otuslinux:
+    otuslinux:   Installing : 1:smartmontools-6.5-1.el7.x86_64                             5/7
+    otuslinux:
+    otuslinux:   Installing : mdadm-4.0-13.el7.x86_64                                      6/7
+    otuslinux:
+    otuslinux:   Installing : hdparm-9.43-5.el7.x86_64                                     7/7
+    otuslinux:
+    otuslinux:   Verifying  : 1:smartmontools-6.5-1.el7.x86_64                             1/7
+    otuslinux:
+    otuslinux:   Verifying  : gdisk-0.8.6-5.el7.x86_64                                     2/7
+    otuslinux:
+    otuslinux:   Verifying  : libicu-50.1.2-15.el7.x86_64                                  3/7
+    otuslinux:
+    otuslinux:   Verifying  : mdadm-4.0-13.el7.x86_64                                      4/7
+    otuslinux:
+    otuslinux:   Verifying  : mailx-12.5-19.el7.x86_64                                     5/7
+    otuslinux:
+    otuslinux:   Verifying  : hdparm-9.43-5.el7.x86_64                                     6/7
+    otuslinux:
+    otuslinux:   Verifying  : libreport-filesystem-2.1.11-40.el7.centos.x86_64             7/7
+    otuslinux:
+    otuslinux:
+    otuslinux: Installed:
+    otuslinux:   gdisk.x86_64 0:0.8.6-5.el7          hdparm.x86_64 0:9.43-5.el7
+    otuslinux:   mdadm.x86_64 0:4.0-13.el7           smartmontools.x86_64 1:6.5-1.el7
+    otuslinux:
+    otuslinux: Dependency Installed:
+    otuslinux:   libicu.x86_64 0:50.1.2-15.el7
+    otuslinux:   libreport-filesystem.x86_64 0:2.1.11-40.el7.centos
+    otuslinux:   mailx.x86_64 0:12.5-19.el7
+    otuslinux:
+    otuslinux: Complete!
+    otuslinux: mdadm: Unrecognised md component device - /dev/sdb
+    otuslinux: mdadm: Unrecognised md component device - /dev/sdc
+    otuslinux: mdadm: Unrecognised md component device - /dev/sdd
+    otuslinux: mdadm: Unrecognised md component device - /dev/sde
+    otuslinux: mdadm: Defaulting to version 1.2 metadata
+    otuslinux: mdadm: array /dev/md10 started.
+    otuslinux: GPT fdisk (gdisk) version 0.8.6
+    otuslinux:
+    otuslinux: Partition table scan:
+    otuslinux:   MBR: not present
+    otuslinux:   BSD: not present
+    otuslinux:   APM: not present
+    otuslinux:   GPT: not present
+    otuslinux:
+    otuslinux: Creating new GPT entries.
+    otuslinux:
+    otuslinux: Command (? for help): This option deletes all partitions and creates a new protective MBR.
+    otuslinux: Proceed? (Y/N):
+    otuslinux: Command (? for help): Partition number (1-128, default 1): First sector (34-1015774, default = 2048) or {+-}size{KMGTP}: Last sector (2048-1015774, default = 1015774) or {+-}size{KMGTP}: Current type is 'Linux filesystem'
+    otuslinux: Hex code or GUID (L to show codes, Enter = 8300): Changed type of partition to 'Linux filesystem'
+    otuslinux:
+    otuslinux: Command (? for help): Partition number (2-128, default 2): First sector (34-1015774, default = 65536) or {+-}size{KMGTP}: Last sector (65536-1015774, default = 1015774) or {+-}size{KMGTP}: Current type is 'Linux filesystem'
+    otuslinux: Hex code or GUID (L to show codes, Enter = 8300): Changed type of partition to 'Linux filesystem'
+    otuslinux:
+    otuslinux: Command (? for help): Partition number (3-128, default 3): First sector (34-1015774, default = 131072) or {+-}size{KMGTP}: Last sector (131072-1015774, default = 1015774) or {+-}size{KMGTP}: Current type is 'Linux filesystem'
+    otuslinux: Hex code or GUID (L to show codes, Enter = 8300): Changed type of partition to 'Linux filesystem'
+    otuslinux:
+    otuslinux: Command (? for help): Partition number (4-128, default 4): First sector (34-1015774, default = 198656) or {+-}size{KMGTP}: Last sector (198656-1015774, default = 1015774) or {+-}size{KMGTP}: Current type is 'Linux filesystem'
+    otuslinux: Hex code or GUID (L to show codes, Enter = 8300): Changed type of partition to 'Linux filesystem'
+    otuslinux:
+    otuslinux: Command (? for help): Disk /dev/md10: 1015808 sectors, 496.0 MiB
+    otuslinux: Logical sector size: 512 bytes
+    otuslinux: Disk identifier (GUID): CA31945D-8CD3-45ED-8728-199BC5CEE517
+    otuslinux: Partition table holds up to 128 entries
+    otuslinux: First usable sector is 34, last usable sector is 1015774
+    otuslinux: Partitions will be aligned on 2048-sector boundaries
+    otuslinux: Total free space is 749501 sectors (366.0 MiB)
+    otuslinux:
+    otuslinux: Number  Start (sector)    End (sector)  Size       Code  Name
+    otuslinux:    1            2048           65535   31.0 MiB    8300  Linux filesystem
+    otuslinux:    2           65536          131071   32.0 MiB    8300  Linux filesystem
+    otuslinux:    3          131072          198655   33.0 MiB    8300  Linux filesystem
+    otuslinux:    4          198656          268287   34.0 MiB    8300  Linux filesystem
+    otuslinux:
+    otuslinux: Command (? for help):
+    otuslinux: Final checks complete. About to write GPT data. THIS WILL OVERWRITE EXISTING
+    otuslinux: PARTITIONS!!
+    otuslinux:
+    otuslinux: Do you want to proceed? (Y/N):
+    otuslinux: OK; writing new GUID partition table (GPT) to /dev/md10.
+    otuslinux: The operation has completed successfully.
+    otuslinux: mke2fs 1.42.9 (28-Dec-2013)
+    otuslinux: Filesystem label=
+    otuslinux: OS type: Linux
+    otuslinux: Block size=1024 (log=0)
+    otuslinux: Fragment size=1024 (log=0)
+    otuslinux: Stride=512 blocks, Stripe width=1024 blocks
+    otuslinux: 7936 inodes, 31744 blocks
+    otuslinux: 1587 blocks (5.00%) reserved for the super user
+    otuslinux: First data block=1
+    otuslinux: Maximum filesystem blocks=32505856
+    otuslinux: 4 block groups
+    otuslinux: 8192 blocks per group, 8192 fragments per group
+    otuslinux: 1984 inodes per group
+    otuslinux: Superblock backups stored on blocks:
+    otuslinux: 	8193, 24577
+    otuslinux:
+    otuslinux: Allocating group tables: done
+    otuslinux: Writing inode tables: done
+    otuslinux: Creating journal (1024 blocks):
+    otuslinux: done
+    otuslinux: Writing superblocks and filesystem accounting information: 0/4
+    otuslinux:
+    otuslinux: done
+    otuslinux: mkdir: created directory ‘/raid_10’
+    otuslinux: mkdir: created directory ‘/raid_10/partition_1’
+    otuslinux: mke2fs 1.42.9 (28-Dec-2013)
+    otuslinux: Filesystem label=
+    otuslinux: OS type: Linux
+    otuslinux: Block size=1024 (log=0)
+    otuslinux: Fragment size=1024 (log=0)
+    otuslinux: Stride=512 blocks, Stripe width=1024 blocks
+    otuslinux: 8192 inodes, 32768 blocks
+    otuslinux: 1638 blocks (5.00%) reserved for the super user
+    otuslinux: First data block=1
+    otuslinux: Maximum filesystem blocks=33554432
+    otuslinux: 4 block groups
+    otuslinux: 8192 blocks per group, 8192 fragments per group
+    otuslinux: 2048 inodes per group
+    otuslinux: Superblock backups stored on blocks:
+    otuslinux: 	8193, 24577
+    otuslinux:
+    otuslinux: Allocating group tables: done
+    otuslinux: Writing inode tables: done
+    otuslinux: Creating journal (4096 blocks):
+    otuslinux: done
+    otuslinux: Writing superblocks and filesystem accounting information: 0/4
+    otuslinux:
+    otuslinux: done
+    otuslinux: mkdir: created directory ‘/raid_10/partition_2’
+    otuslinux: mke2fs 1.42.9 (28-Dec-2013)
+    otuslinux: Filesystem label=
+    otuslinux: OS type: Linux
+    otuslinux: Block size=1024 (log=0)
+    otuslinux: Fragment size=1024 (log=0)
+    otuslinux: Stride=512 blocks, Stripe width=1024 blocks
+    otuslinux: 8480 inodes, 33792 blocks
+    otuslinux: 1689 blocks (5.00%) reserved for the super user
+    otuslinux: First data block=1
+    otuslinux: Maximum filesystem blocks=33685504
+    otuslinux: 5 block groups
+    otuslinux: 8192 blocks per group, 8192 fragments per group
+    otuslinux: 1696 inodes per group
+    otuslinux: Superblock backups stored on blocks:
+    otuslinux: 	8193, 24577
+    otuslinux:
+    otuslinux: Allocating group tables: done
+    otuslinux: Writing inode tables: done
+    otuslinux: Creating journal (4096 blocks):
+    otuslinux: done
+    otuslinux: Writing superblocks and filesystem accounting information: 0/5
+    otuslinux:
+    otuslinux: done
+    otuslinux: mkdir: created directory ‘/raid_10/partition_3’
+    otuslinux: mke2fs 1.42.9 (28-Dec-2013)
+    otuslinux: Filesystem label=
+    otuslinux: OS type: Linux
+    otuslinux: Block size=1024 (log=0)
+    otuslinux: Fragment size=1024 (log=0)
+    otuslinux: Stride=512 blocks, Stripe width=1024 blocks
+    otuslinux: 8720 inodes, 34816 blocks
+    otuslinux: 1740 blocks (5.00%) reserved for the super user
+    otuslinux: First data block=1
+    otuslinux: Maximum filesystem blocks=33685504
+    otuslinux: 5 block groups
+    otuslinux: 8192 blocks per group, 8192 fragments per group
+    otuslinux: 1744 inodes per group
+    otuslinux: Superblock backups stored on blocks:
+    otuslinux: 	8193, 24577
+    otuslinux:
+    otuslinux: Allocating group tables: done
+    otuslinux: Writing inode tables: done
+    otuslinux: Creating journal (4096 blocks):
+    otuslinux: done
+    otuslinux: Writing superblocks and filesystem accounting information: 0/5
+    otuslinux:
+    otuslinux: done
+    otuslinux: mkdir: created directory ‘/raid_10/partition_4’
+aidjek@Compunet-MacBook-Pro:~/Projects/OTUS/HomeWorks/2_linux_raid/additional_task|
+⇒  vagrant ssh
+[vagrant@otuslinux ~]$ df -h
+Filesystem                       Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup00-LogVol00   38G  1.8G   36G   5% /
+devtmpfs                         487M     0  487M   0% /dev
+tmpfs                            496M     0  496M   0% /dev/shm
+tmpfs                            496M  6.8M  490M   2% /run
+tmpfs                            496M     0  496M   0% /sys/fs/cgroup
+/dev/sda2                       1014M   63M  952M   7% /boot
+tmpfs                            100M     0  100M   0% /run/user/1000
+/dev/md10p1                       30M  755K   27M   3% /raid_10/partition_1
+/dev/md10p2                       27M  779K   24M   4% /raid_10/partition_2
+/dev/md10p3                       28M  782K   25M   3% /raid_10/partition_3
+/dev/md10p4                       29M  782K   26M   3% /raid_10/partition_4
+[vagrant@otuslinux ~]$ sudo su -
+[root@otuslinux ~]# cat /proc/mdstat
+Personalities : [raid10]
+md10 : active raid10 sde[3] sdd[2] sdc[1] sdb[0]
+      507904 blocks super 1.2 512K chunks 2 near-copies [4/4] [UUUU]
+
+unused devices: <none>
+[root@otuslinux ~]# sfdisk -l
+
+Disk /dev/sda: 5221 cylinders, 255 heads, 63 sectors/track
+Units: cylinders of 8225280 bytes, blocks of 1024 bytes, counting from 0
+
+   Device Boot Start     End   #cyls    #blocks   Id  System
+/dev/sda1          0+      0-      1-      1024   83  Linux
+/dev/sda2   *      0+    130-    131-   1048576   83  Linux
+/dev/sda3        130+   5221-   5091-  40892416   8e  Linux LVM
+/dev/sda4          0       -       0          0    0  Empty
+
+Disk /dev/sdb: 31 cylinders, 255 heads, 63 sectors/track
+
+Disk /dev/sdc: 31 cylinders, 255 heads, 63 sectors/track
+
+Disk /dev/sdd: 31 cylinders, 255 heads, 63 sectors/track
+
+Disk /dev/sde: 31 cylinders, 255 heads, 63 sectors/track
+
+Disk /dev/mapper/VolGroup00-LogVol00: 4891 cylinders, 255 heads, 63 sectors/track
+
+Disk /dev/mapper/VolGroup00-LogVol01: 195 cylinders, 255 heads, 63 sectors/track
+
+Disk /dev/md10: 126976 cylinders, 2 heads, 4 sectors/track
+sfdisk: Warning: The partition table looks like it was made
+  for C/H/S=*/256/63 (instead of 126976/2/4).
+For this listing I'll assume that geometry.
+
+Units: cylinders of 8257536 bytes, blocks of 1024 bytes, counting from 0
+
+   Device Boot Start     End   #cyls    #blocks   Id  System
+/dev/md10p1          0+     62-     63-    507903+  ee  GPT
+sfdisk: 		end: (c,h,s) expected (62,251,59) found (1023,255,63)
+
+/dev/md10p2          0       -       0          0    0  Empty
+/dev/md10p3          0       -       0          0    0  Empty
+/dev/md10p4          0       -       0          0    0  Empty
+[root@otuslinux ~]# lsblk
+NAME                    MAJ:MIN RM  SIZE RO TYPE   MOUNTPOINT
+sda                       8:0    0   40G  0 disk
+├─sda1                    8:1    0    1M  0 part
+├─sda2                    8:2    0    1G  0 part   /boot
+└─sda3                    8:3    0   39G  0 part
+  ├─VolGroup00-LogVol00 253:0    0 37.5G  0 lvm    /
+  └─VolGroup00-LogVol01 253:1    0  1.5G  0 lvm    [SWAP]
+sdb                       8:16   0  250M  0 disk
+└─md10                    9:10   0  496M  0 raid10
+  ├─md10p1              259:0    0   31M  0 md     /raid_10/partition_1
+  ├─md10p2              259:1    0   32M  0 md     /raid_10/partition_2
+  ├─md10p3              259:2    0   33M  0 md     /raid_10/partition_3
+  └─md10p4              259:3    0   34M  0 md     /raid_10/partition_4
+sdc                       8:32   0  250M  0 disk
+└─md10                    9:10   0  496M  0 raid10
+  ├─md10p1              259:0    0   31M  0 md     /raid_10/partition_1
+  ├─md10p2              259:1    0   32M  0 md     /raid_10/partition_2
+  ├─md10p3              259:2    0   33M  0 md     /raid_10/partition_3
+  └─md10p4              259:3    0   34M  0 md     /raid_10/partition_4
+sdd                       8:48   0  250M  0 disk
+└─md10                    9:10   0  496M  0 raid10
+  ├─md10p1              259:0    0   31M  0 md     /raid_10/partition_1
+  ├─md10p2              259:1    0   32M  0 md     /raid_10/partition_2
+  ├─md10p3              259:2    0   33M  0 md     /raid_10/partition_3
+  └─md10p4              259:3    0   34M  0 md     /raid_10/partition_4
+sde                       8:64   0  250M  0 disk
+└─md10                    9:10   0  496M  0 raid10
+  ├─md10p1              259:0    0   31M  0 md     /raid_10/partition_1
+  ├─md10p2              259:1    0   32M  0 md     /raid_10/partition_2
+  ├─md10p3              259:2    0   33M  0 md     /raid_10/partition_3
+  └─md10p4              259:3    0   34M  0 md     /raid_10/partition_4
